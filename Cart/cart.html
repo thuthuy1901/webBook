@@ -9,6 +9,7 @@
     />
     <link rel="stylesheet" href="../Home/style.css" />
     <link rel="stylesheet" href="../Shop/shop.css" />
+    <link rel="stylesheet" href="../Cart/cart.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome!</title>
@@ -44,5 +45,184 @@
         </ul>
       </div>
     </section>
+
+    <section id="page-header" class="cart-header">
+      <h2>#hi</h2>
+      <p>We Wish You Well On This Day</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Xóa</td>
+            <td>Ảnh</td>
+            <td>Sản Phẩm</td>
+            <td>Giá</td>
+            <td>Số Lượng</td>
+            <td>Thành Tiền</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#"
+                ><img
+                  width="15px"
+                  src="../img/icon/iconRemove/remove.png"
+                  alt=""
+              /></a>
+            </td>
+            <td>
+              <img
+                class="img-product"
+                src="../img/book/HanhTinhCuaKeNghiNhieu/bia.jpg"
+                alt=""
+              />
+            </td>
+            <td>Hành Tinh Của Kẻ Nghĩ Nhiều</td>
+            <td>112.000</td>
+            <td><input type="number" value="1" /></td>
+            <td>112.000</td>
+          </tr>
+
+          <tr>
+            <td>
+              <a href="#"
+                ><img
+                  width="15px"
+                  src="../img/icon/iconRemove/remove.png"
+                  alt=""
+              /></a>
+            </td>
+            <td>
+              <img
+                class="img-product"
+                src="../img/book/KhongPhaiSoiCungDungLaCuu/bia.jpg"
+                alt=""
+              />
+            </td>
+            <td>Không Phải Sói Cũng Đừng Là Cừu</td>
+            <td>112.000</td>
+            <td><input type="number" value="1" /></td>
+            <td>112.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Mã Giảm Giá</h3>
+        <div>
+          <input type="text" placeholder="Nhập mã" />
+          <button class="normal">Apply</button>
+        </div>
+      </div>
+      <div id="subtotal">
+        <h3>Thanh Toán</h3>
+        <table>
+          <tr>
+            <td>Tạm Tính</td>
+            <td>112.000</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+          </tr>
+          <tr>
+            <td><strong>Thành Tiền</strong></td>
+            <td><strong>112.000</strong></td>
+          </tr>
+        </table>
+        <button class="normal">THANH TOÁN</button>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Để lại email ngay!</h4>
+        <p>Nhận ngay nghìn <span>ưu đãi</span>...</p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Nhập email tại đây" />
+        <button class="normal">SIGN UP</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img
+          style="width: 100px"
+          src="../img/logo/logoGiaoDien/congrats_black.png"
+          alt=""
+          class="logo"
+        />
+        <p>
+          <strong>Địa chỉ: </strong>Tòa nhà ABC, Khu vực DCE, Thành phố Hà Nội
+        </p>
+        <p><strong>Sđt: </strong>+8412345678 / +84999999999</p>
+        <p><strong>Giờ làm việc: </strong> 08:00 - 17:00, Thứ hai - Chủ nhật</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <img src="../img/logo/logoAppWeb/facebook.png" />
+            <img src="../img/logo/logoAppWeb/instagram.png" />
+            <img src="../img/logo/logoAppWeb/pinterest.png" />
+            <img src="../img/logo/logoAppWeb/twitter.png" />
+            <img src="../img/logo/logoAppWeb/youtube.png" />
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>Giới thiệu</h4>
+        <a href="">Thông tin</a>
+        <a href="">Nhà cung cấp</a>
+        <a href="">Chính sách bảo mật</a>
+        <a href="">Quyền và điều kiện</a>
+        <a href="">Liên hệ</a>
+      </div>
+
+      <div class="col">
+        <h4>Tài khoản</h4>
+        <a href="">Đăng nhập</a>
+        <a href="">Xem giỏ hàng</a>
+        <a href="">Danh sách yêu thích</a>
+        <a href="">Xem đơn hàng</a>
+        <a href="">Trợ giúp</a>
+      </div>
+
+      <div class="col install">
+        <h4>Tải app</h4>
+        <p>Từ App Store hoặc Google Play</p>
+        <div class="row">
+          <img class="row2" src="../img/logo/logoApp/appstore1.png" alt="" />
+          <img class="row2" src="../img/logo/logoApp/android1.png" alt="" />
+          <p>Thanh toán an toàn tiện lợi!</p>
+          <div class="row row-pay">
+            <img src="../img/logo/logoApp/momopay.png" alt="" class="row4" />
+            <img
+              class="row4"
+              src="../img/logo/logoApp/shopeepay_logo1.png"
+              alt=""
+            />
+            <img class="row4" src="../img/logo/logoApp/vnpay_logo.png" alt="" />
+            <img
+              class="row4"
+              src="../img/logo/logoApp/ZaloPay-logo-130x83.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu
+          tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ
+          10, ngày 20/05/2022.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
