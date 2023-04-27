@@ -12,10 +12,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome!</title>
+    <script src="../Home/script.js"></script>
   </head>
   <body>
     <section id="header">
-      <a href="#">
+      <a href="../Home/index.html">
         <img src="../img/logo/logoGiaoDien/congrats.png" class="logo" />
       </a>
 
@@ -89,7 +90,7 @@
         </div>
       </div>
 
-      <div class="single-pro-details">
+      <div class="single-pro-details boxsp">
         <h6>Home / luathapdan</h6>
         <h4>Luật Hấp Dẫn</h4>
         <h2>112.000 vnd</h2>
@@ -98,8 +99,10 @@
           <option value="">Bìa cứng</option>
           <option value="">Bìa mềm</option>
         </select>
-        <input type="number" value="1" />
-        <button class="normal">Thêm vào giỏ hàng</button>
+        <input type="number" value="1" min="1" />
+        <button class="normal" onclick="themvaogiohang(this)">
+          Thêm vào giỏ hàng
+        </button>
         <h4>Trích dẫn:</h4>
         <span
           >Mọi sự vật trong vũ trụ đều có tính tương đối, nghĩa là đều vô
