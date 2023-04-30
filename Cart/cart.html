@@ -13,7 +13,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome!</title>
-    <script src="../Home/script.js"></script>
   </head>
   <body>
     <section id="header">
@@ -41,6 +40,7 @@
           <li>
             <a class="active" href="../Cart/cart.html">
               <img src="../img/logo/logoCart/shopping-bag-color-green.png" />
+              <h1 class="cartNo">0</h1>
             </a>
           </li>
         </ul>
@@ -54,7 +54,7 @@
 
     <section id="cart" class="section-p1">
       <table width="100%">
-        <thead>
+        <thead id="headerCart">
           <tr>
             <td>Xóa</td>
             <td>Ảnh</td>
@@ -64,51 +64,7 @@
             <td>Thành Tiền</td>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>
-              <img
-                width="15px"
-                src="../img/icon/iconRemove/remove.png"
-                alt=""
-                class="btn-danger"
-              />
-            </td>
-            <td>
-              <img
-                class="img-product"
-                src="../img/book/HanhTinhCuaKeNghiNhieu/bia.jpg"
-                alt=""
-              />
-            </td>
-            <td>Hành Tinh Của Kẻ Nghĩ Nhiều</td>
-            <td>112.000</td>
-            <td><input type="number" value="1" min="1" /></td>
-            <td>112.000</td>
-          </tr>
-
-          <tr>
-            <td>
-              <img
-                width="15px"
-                src="../img/icon/iconRemove/remove.png"
-                alt=""
-                class="btn-danger"
-              />
-            </td>
-            <td>
-              <img
-                class="img-product"
-                src="../img/book/KhongPhaiSoiCungDungLaCuu/bia.jpg"
-                alt=""
-              />
-            </td>
-            <td>Không Phải Sói Cũng Đừng Là Cừu</td>
-            <td>112.000</td>
-            <td><input type="number" value="1" min="1" /></td>
-            <td>112.000</td>
-          </tr>
-        </tbody>
+        <tbody id="bodyCart"></tbody>
       </table>
     </section>
 
@@ -125,7 +81,7 @@
         <table>
           <tr>
             <td>Tạm Tính</td>
-            <td>112.000</td>
+            <td id="TamTinh">0</td>
           </tr>
           <tr>
             <td>Shipping</td>
@@ -133,7 +89,7 @@
           </tr>
           <tr>
             <td><strong>Thành Tiền</strong></td>
-            <td><strong>112.000</strong></td>
+            <td><strong id="TongTien">0</strong></td>
           </tr>
         </table>
         <button class="normal">THANH TOÁN</button>
@@ -225,5 +181,7 @@
         </p>
       </div>
     </footer>
+    <script src="../Home/chung.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>
