@@ -254,6 +254,7 @@ else{
 
 function addCart(objSP){
     objSP = JSON.parse(objSP);
+    // console.log(objSP);
     var item;
     var flag = false;
 
@@ -278,8 +279,8 @@ function addCart(objSP){
     localStorage.setItem("totalQty", soluong + "");
     localStorage.setItem("myCart", JSON.stringify(arrCart));
 
-    thongBao();
-
+    // location.reload();
+    
 }
 
 function showDetail(objSP){
