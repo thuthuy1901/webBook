@@ -71,6 +71,10 @@ body {
   width: 100%;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* header */
 
 #header {
@@ -178,7 +182,7 @@ body {
 #hero button {
   background-image: url(../img/logo/iconbutton/button.png);
   background-color: transparent;
-  color: #0eada3;
+  
   border: 0;
   padding: 14px 80px 16px 65px;
   background-repeat: no-repeat;
@@ -187,6 +191,10 @@ body {
   font-size: 15px;
 }
 
+#hero button a{
+  color: #0eada3;
+  text-decoration: none;
+}
 /* feature */
 
 #feature{
@@ -362,9 +370,15 @@ body {
   color: #ef3636;
 }
 
-#banner button:hover{
+#banner button:hover,
+#banner button a:hover{
   background: #088178;
   color: #fff;
+}
+
+#banner button a{
+  text-decoration: none;
+  color: #000;
 }
 
 /* deal 2 banner*/
