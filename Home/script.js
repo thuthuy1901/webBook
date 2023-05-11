@@ -1,3 +1,4 @@
+
 let sp ={
     id: "1",
     biaSach: "../img/book/LuatHapDan/bia.jpg",
@@ -253,39 +254,50 @@ else{
 }
 
 function addCart(objSP){
-    objSP = JSON.parse(objSP);
-    // console.log(objSP);
-    var item;
-    var flag = false;
+    if(Status.Status==0){
+        location.href= "../DangNhap/login.html";
+    }
+    else{
+        objSP = JSON.parse(objSP);
+        // console.log(objSP);
+        var item;
+        var flag = false;
 
-    for(let i=0; i< arrCart.length; i++){
-        
-        if(arrCart[i].sp.id == objSP.id){
-            arrCart[i].qty ++;
-            flag = true;
-            break;
+        for(let i=0; i< arrCart.length; i++){
+            
+            if(arrCart[i].sp.id == objSP.id){
+                arrCart[i].qty ++;
+                flag = true;
+                break;
+            }
         }
+
+        if(flag == false){
+            let cartItem = {sp: objSP, qty: 1};
+            arrCart.push(cartItem);
+        }
+
+
+        soluong++;
+        document.querySelector(".cartNo").innerText = soluong;
+
+        localStorage.setItem("totalQty", soluong + "");
+        localStorage.setItem("myCart", JSON.stringify(arrCart))
     }
-
-    if(flag == false){
-        let cartItem = {sp: objSP, qty: 1};
-        arrCart.push(cartItem);
-    }
-
-    
-    soluong++;
-    document.querySelector(".cartNo").innerText = soluong;
-
-    localStorage.setItem("totalQty", soluong + "");
-    localStorage.setItem("myCart", JSON.stringify(arrCart));
 
     // location.reload();
     
 }
 
 function showDetail(objSP){
-    window.localStorage.setItem("sanpham", objSP);
-    location.href = "../Product/product.html";
+    if(Status.Status == 0){
+        location.href="../DangNhap/login.html"
+    }
+    else{
+        window.localStorage.setItem("sanpham", objSP);
+        location.href = "../Product/product.html";
+    }
+    
 }
 
 function thongBao() {
@@ -294,7 +306,11 @@ function thongBao() {
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
-
+function thongBaoW() {
+    var x = document.getElementById("snackbar1");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
 
 
 

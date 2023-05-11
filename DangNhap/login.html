@@ -37,18 +37,18 @@
             <span class="icon"
               ><img src="../img/icon/iconFormDN/email.png"
             /></span>
-            <input type="text" />
+            <input type="text" class="username-L" />
             <label>UserName</label>
           </div>
           <div class="input-box">
             <span class="icon"
               ><img src="../img/icon/iconFormDN/padlock.png" alt=""
             /></span>
-            <input type="password" />
+            <input type="password" class="password-L" />
             <label>Password</label>
           </div>
 
-          <button type="submit" class="btn">LOGIN</button>
+          <button type="submit" class="btn" id="btnL">LOGIN</button>
           <div class="login-register">
             <p>
               Don't have a account?<a href="#" class="register-link" id="RL">
@@ -66,14 +66,14 @@
             <span class="icon"
               ><img src="../img/icon/iconFormDN/email.png"
             /></span>
-            <input type="text" />
+            <input type="text" class="username-R" />
             <label>UserName</label>
           </div>
           <div class="input-box">
             <span class="icon"
               ><img src="../img/icon/iconFormDN/padlock.png" alt=""
             /></span>
-            <input type="text" />
+            <input type="text" class="password-R" />
             <label>Password</label>
           </div>
 
@@ -81,11 +81,11 @@
             <span class="icon"
               ><img src="../img/icon/iconMap/map.png" alt=""
             /></span>
-            <input type="text" />
+            <input type="text" class="address-R" />
             <label>Address</label>
           </div>
 
-          <button type="submit" class="btn">REGISTER</button>
+          <button type="submit" class="btn" id="btnR">REGISTER</button>
           <div class="login-register">
             <p>
               Do have a accout?<a href="#" class="login-link" id="LL"> Login</a>
@@ -94,6 +94,11 @@
         </form>
       </div>
     </div>
+
+    <div id="snackbar">Vui lòng điền vào chỗ trống!</div>
+    <div id="snackbar1">Tài khoản hoặc mật khẩu sai!</div>
+    <div id="snackbar2">Đăng nhập để đặt hàng!</div>
     <script src="../DangNhap/login.js"></script>
+    <!-- <script src="../Home/chung.js"></script> -->
   </body>
 </html>

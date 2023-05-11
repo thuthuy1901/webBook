@@ -38,6 +38,11 @@
             <a href="../Contact/contact.html">Contact</a>
           </li>
           <li>
+            <a id="LogOut" href="../DangNhap/login.html" onclick="Logout()"
+              >Logout</a
+            >
+          </li>
+          <li>
             <a class="active" href="../Cart/cart.html">
               <img src="../img/logo/logoCart/shopping-bag-color-green.png" />
               <h1 class="cartNo">0</h1>
@@ -92,17 +97,19 @@
             <td><strong id="TongTien">0</strong></td>
           </tr>
         </table>
-        <button class="normal">THANH TOÁN</button>
+        <button class="normal" onclick="thanhToanCuoiCung();">
+          THANH TOÁN
+        </button>
         <div id="snackbar">Cập Nhập Thành Công</div>
       </div>
     </section>
 
     <section id="newsletter" class="section-p1 section-m1">
-      <div class="newstext">
+      <div class="newstext" id="dnL">
         <h4>Để lại email ngay!</h4>
         <p>Nhận ngay nghìn <span>ưu đãi</span>...</p>
       </div>
-      <div class="form">
+      <div class="form" id="dnR">
         <input type="text" placeholder="Nhập email tại đây" />
         <button class="normal">SIGN UP</button>
       </div>

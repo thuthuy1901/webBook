@@ -38,6 +38,11 @@
             <a href="../Contact/contact.html">Contact</a>
           </li>
           <li>
+            <a id="LogOut" href="../DangNhap/login.html" onclick="Logout()"
+              >Logout</a
+            >
+          </li>
+          <li>
             <a href="../Cart/cart.html">
               <img src="../img/logo/logoCart/paper-bag.png" />
               <h1 class="cartNo">0</h1>
@@ -111,12 +116,16 @@
       </div>
     </section>
 
-    <section id="newsletter" class="section-p1 section-m1">
-      <div class="newstext">
+    <section
+      onclick="dangnhap();"
+      id="newsletter"
+      class="section-p1 section-m1"
+    >
+      <div class="newstext" id="dnL">
         <h4>Để lại email ngay!</h4>
         <p>Nhận ngay nghìn <span>ưu đãi</span>...</p>
       </div>
-      <div class="form">
+      <div class="form" id="dnR">
         <input type="text" placeholder="Nhập email tại đây" />
         <button class="normal">SIGN UP</button>
       </div>
